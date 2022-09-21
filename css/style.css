@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D9D9D9;
+}
+
+body, input, button, select, textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 368px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #121214;
+}
+
+.page {
+  width: 736px;
+  margin: auto;
+}
+.page .form-header {
+  width: 319px;
+  margin-top: 74px;
+}
+.page .form-header h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 24px;
+}
+.page .form-header p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #42D3FF;
+}
+.page form {
+  background-color: #FAFAFc;
+  min-height: 300px;
+  margin-top: 38px;
+  border-radius: 8px 8px 0 0;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.page form fieldset {
+  border: none;
+}
+.page form fieldset legend {
+  width: 100%;
+  font-family: "Archivo", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+.page form fieldset .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+.page form fieldset .input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  margin-bottom: 8px;
+}
+.page form fieldset .input-wrapper label span {
+  margin-left: 12px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #c1bccc;
+}
+.page form fieldset .input-wrapper label span:hover {
+  color: #a09ca8;
+}
+.page form fieldset .input-wrapper input, .page form fieldset .input-wrapper textarea, .page form fieldset .input-wrapper select {
+  height: 56px;
+  background-color: #FAFAFc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  padding: 0 24px;
+  color: #a09ca8;
+}
+.page form fieldset .input-wrapper select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../Select.svg");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+  cursor: pointer;
+}
+.page form fieldset .input-wrapper textarea {
+  padding: 0;
+  height: 168px;
+}
+.page form fieldset .col-3 {
+  display: flex;
+  gap: 20px;
+}
+.page form fieldset .col-3 > div:nth-child(1) {
+  width: 100%;
+}
+.page form fieldset .checkbox-wrapper {
+  position: relative;
+}
+.page form fieldset .checkbox-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.page form fieldset .checkbox-wrapper label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+.page form fieldset .checkbox-wrapper input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.page form fieldset .checkbox-wrapper input:checked + label::before {
+  background-image: url("../check.svg");
+  background-repeat: no-repeat;
+}
+.page form fieldset .checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+.page .form-buttons {
+  height: 136px;
+  background-color: #F0F0F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 40px;
+  margin-bottom: 100px;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid #d6d6d6;
+}
+.page .form-buttons button {
+  border: none;
+  border-radius: 8px;
+  background-color: #04D361;
+  height: 56px;
+  font-family: "Archivo", sans-serif;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.page .form-buttons button:hover {
+  background-color: #12b65c;
+}
+
+input:invalid {
+  border: 1px solid #c40b0b;
+}/*# sourceMappingURL=style.css.map */
