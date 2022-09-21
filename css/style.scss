@@ -98,7 +98,7 @@ body::before {
         }
         select {
           appearance: none;
-          background-image: url('../Select.svg');
+          background-image: url('../img/Select.svg');
           background-repeat: no-repeat;
           background-position: right 24px top 50%;
           cursor: pointer;
@@ -141,7 +141,7 @@ body::before {
           left: 0;
         }
         input:checked + label::before {
-          background-image: url('../check.svg');
+          background-image: url('../img/check.svg');
           background-repeat: no-repeat;
         }
         input:focus + label::before {
