@@ -12,3 +12,9 @@ apresentando as informações do evento que o usuário deseja criar.
 - SASS
 - Javascript(principalmente o DOM)
 - figma
+
+### deploy
+Link > https://guilhermealves-prog.github.io/EventCreator/
+
+## Preview
+![eventcreatorspeed](https://user-images.githubusercontent.com/70963422/192390721-79895f6d-5fe3-46d5-b13b-015c6a4f3fff.gif)
